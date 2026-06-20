@@ -1,11 +1,3 @@
-<div align="center">
+ML Explorer v3 is an interactive, automated Machine Learning (AutoML) platform and educational algorithm learning lab. Wrapped in an ultra-modern, glassmorphic user interface, the application bridges the gap between complex data science workflows and intuitive data exploration.
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-
-  <h1>Built with AI Studio</h2>
-
-  <p>The fastest path from prompt to production with Gemini.</p>
-
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+Designed for data enthusiasts, students, and developers alike, the platform allows users to instantly upload datasets, automate data preprocessing, and seamlessly train, evaluate, and compare an expansive suite of predictive modeling systems without writing a single line of backend code.
