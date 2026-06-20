@@ -1,0 +1,6 @@
+{
+  "name": "AutoML Playground",
+  "description": "An automated Machine Learning (AutoML) platform and algorithm learning lab featuring Glassmorphism UI",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ML Explorer v3 - AutoML & Algorithm Laboratory{% endblock %}</title>
+    <!-- Google Fonts Integration (Space Grotesk, Inter, JetBrains Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to isolated custom assets stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <!-- Sticky Horizontal Glass Segmented Navigation Tab Header -->
+    <header class="header-glass-nav">
+        <div class="logo-display font-display">
+            ML EXPLORER <span class="font-mono" style="font-size: 0.6em; vertical-align: super; opacity: 0.8;">V3</span>
+        </div>
+        <nav class="nav-links-row" id="header-tabs">
+            <button class="nav-tab-btn active" data-tab="home" id="btn-tab-home">Home</button>
+            <button class="nav-tab-btn" data-tab="upload" id="btn-tab-upload">Upload Data</button>
+            <button class="nav-tab-btn" data-tab="analysis" id="btn-tab-analysis">Data Analysis</button>
+            <button class="nav-tab-btn" data-tab="training" id="btn-tab-training">Model Training</button>
+            <button class="nav-tab-btn" data-tab="results" id="btn-tab-results">Model Results</button>
+            <button class="nav-tab-btn" data-tab="predictor" id="btn-tab-predictor">Predictor Dashboard</button>
+            <button class="nav-tab-btn" data-tab="learn" id="btn-tab-learn">Learn Algorithms</button>
+        </nav>
+    </header>
+
+    <!-- Main display stage -->
+    <main class="main-stage">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer with literal human labels and zero clutter -->
+    <footer style="margin-top: 48px; text-align: center; color: var(--text-secondary); font-size: 0.8rem; padding: 24px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+        ML Explorer v3 &bull; Automated AutoML Platform and Algorithm Learning Laboratory
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>
